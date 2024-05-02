@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'gag';
+    src: url(gagalin/Gagalin-Regular.otf);
+}
+
+
+
+/* header section */
+
+
+
+header .navbar {
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures navbar spans full width of viewport */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000; /* Ensures navbar stays above other content */
+    /* You can add additional styling properties as needed */
+}
+
+
+.navbar .sections ,.navbar .sections a{
+    display: flex;
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'gag';
+    text-decoration: none;
+    
+}
+
+.navbar .logo span{
+    font-weight: bold;
+    font-family: 'gag';
+    margin-right: 3px;
+}
+
+.navbar .logo h1{
+    font-weight: bold;
+    font-family: 'gag';
+    letter-spacing: 3px;
+
+}
+
+.navbar .sections h2 , .navbar .sections button{
+    padding-left: 18px;
+    padding-right: 18px;
+    color: white;
+    font-size: 25px;
+}
+
+.navbar .sections button{
+    outline-style: none;
+    border: none;
+
+}
+
+.navbar .logo span{
+    background-color: #FF6300;
+    padding: 0 15px 0 15px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.navbar .sections .butt{
+    background-color: #FF6300;
+    padding: 0 15px 0 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+.navbar .logo h1{
+    color: white;
+}
+
+header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus{
+    text-decoration: underline;
+    text-decoration-color: #FF6300;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+    color: rgb(222, 222, 222);
+
+}
+
+/*End  header section */
+
+
+
+/* Home section */
+
+
+.home{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home .main-sec{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-sec .content .hi{
+    color: white;
+    font-size: 25px;
+    font-family: gag;
+}
+
+.main-sec .content h3{
+    color:#FF6300 ;
+    font-family: 'gag';
+    font-size: 45px;
+}
+
+.main-sec .content .title{
+    position: relative;
+}
+
+.main-sec .content .title h1{
+    color: white;
+    font-family: gag;
+    text-decoration: none;
+    font-size: 7em;
+}
+
+.main-sec .content .title span{
+    position: absolute;
+    color: white;
+    font-family: gag;
+    font-size: 7em;
+    top: 80px;
+    left: 240px;
+}
+
+.main-sec .content p{
+    margin-top: 100px;
+    color: white;
+    word-wrap: break-word; /* Wrap long words to prevent overflow */
+    font-size: 25px;
+    font-family: gag;
+}
+
+.main-sec .desc{
+    width:67em;
+}
+
+
+.main-sec .content button{
+    background-color: #FF6300;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 2s;
+}
+
+
+.main-sec .content button:hover{
+
+    background-color: #b44805;
+    transform: scale(0.95);
+    
+
+
+}
+
+ .main-sec .shape{
+    position: relative;
+}
+
+
+ .main-sec .shape .soliman{
+
+    position: absolute;
+    top: -105px;
+    right: 115px;
+    width: 24em;
+    height: 30em;
+
+}
+
+/*End  Home section */
+
+
+
+
+
+/* About us section */
+
+
+
+.secon-content{
+    margin-left: 100px;
+    margin-bottom: -190px;
+
+
+}
+
+
+
+.content .desc-second p{
+    margin-top: 0;
+
+
+}
+
+.title .row h4{
+    color: aliceblue;
+}
+
+
+.second-shape{
+    margin-top: 50px;
+}
+
+
+/* progress bar */
+
+.progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    color: #455493;
+    margin: 0 0 20px;
+}
+.progress{
+    height: 7px;
+    background: #f8f8f8;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    border-radius: 0;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before,
+.progress .progress-bar:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: -6px;
+    right: 16px;
+    transform: rotate(45deg);
+}
+.progress .progress-bar:after{
+    border: 4px solid #fff;
+    position: absolute;
+    right: 2px;
+}
+.progress.red .progress-bar:before,
+.progress.red .progress-bar:after{
+    outline: 4px solid #ef5b5b;
+}
+.progress.red .progress-bar:after{
+    background: #ef5b5b;
+}
+.progress.yellow .progress-bar:before,
+.progress.yellow .progress-bar:after{
+    outline: 4px solid #ffc116;
+}
+.progress.yellow .progress-bar:after{
+    background: #ffc116;
+}
+.progress.blue .progress-bar:before,
+.progress.blue .progress-bar:after{
+    outline: 4px solid #20a39e;
+}
+.progress.blue .progress-bar:after{
+    background: #20a39e;
+}
+.progress.green .progress-bar:before,
+.progress.green .progress-bar:after{
+    outline: 4px solid #7cb518;
+}
+.progress.green .progress-bar:after{
+    background: #7cb518;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+
+
+/*End progress bar */
+
+
+/*End  About Us section */
+
+
+
+
+
+
+
+
+
+
+/* services */
+
+
+
+.services{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.content h1{
+    color: white;
+    font-family: gag;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: #FF6300;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 5px;
+    color: rgb(222, 222, 222);
+
+}
+
+.services .content .desc{
+    width:67em;
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+
+.services .cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.services .cards .card-widget{
+    background-color: white;
+    float: left;
+    text-align: start;
+    padding: 25px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 320px;
+    height: auto;
+    transition: 4s;
+}
+
+.services .cards .card-widget:hover{
+    transform: scale(0.95);
+
+}
+
+
+.services .cards .card-widget p{
+
+    width: 15em;
+
+}
+
+.services .cards .card-widget img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+/*End  services */
+
+
+
+
+
+
+
+
+.projects{
+    height: 45vh;
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projects .content .desc{
+    width:67em;
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+
+
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.projects .cards .card-widget{
+    background-color: white;
+    float: left;
+    text-align: center;
+    font-family: gag;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 150px;
+    height: auto;
+    transition: 1s;
+}
+
+.projects .cards .card-widget:active ,.projects .cards .card-widget:hover,.projects .cards .card-widget:focus{
+
+    background-color: #FF6300;
+    color: #fff;
+
+
+}
+
+
+
+
+
+
+
+
+
+.card-custom {
+    overflow: hidden;
+    min-height: 450px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  }
+  
+  .card-custom-img {
+    height: 200px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+  }
+  
+  /* First border-left-width setting is a fallback */
+  .card-custom-img::after {
+    position: absolute;
+    content: '';
+    top: 161px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 40px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 545px;
+    border-left-width: calc(575px - 5vw);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+  }
+  
+  .card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 100px;
+    left: 1.25rem;
+    width: 100px;
+    height: 100px;
+  }
+  
+
+
+  /* footer */
+
+
+  .foot{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+
+  .footer{
+    direction: rtl;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .Copyright{
+    font-family: gag;
+  }
+
+
+    /*End  footer */
