@@ -1,9 +1,76 @@
-*{
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: black;
 }
 
@@ -19,55 +86,68 @@ body{
 
 
 header .navbar {
-    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.88);
+    padding-top: 10px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Ensures navbar spans full width of viewport */
+    width: 100%;
+    /* Ensures navbar spans full width of viewport */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 1000; /* Ensures navbar stays above other content */
+    z-index: 1000;
+    /* Ensures navbar stays above other content */
     /* You can add additional styling properties as needed */
 }
 
 
-.navbar .sections ,.navbar .sections a{
+.navbar .sections,
+.navbar .sections a {
     display: flex;
     color: white;
     /* font-weight: bold; */
     font-family: 'gag';
     text-decoration: none;
-    
+
 }
 
-.navbar .logo span{
+.menu {
+    display: none;
+}
+
+.menu button {
+    background-color: transparent;
+}
+
+.navbar .logo span {
     font-weight: bold;
     font-family: 'gag';
     margin-right: 3px;
 }
 
-.navbar .logo h1{
+.navbar .logo h1 {
     font-weight: bold;
     font-family: 'gag';
     letter-spacing: 3px;
 
 }
 
-.navbar .sections h2 , .navbar .sections button{
+.navbar .sections h2,
+.navbar .sections button {
     padding-left: 18px;
     padding-right: 18px;
     color: white;
     font-size: 25px;
 }
 
-.navbar .sections button{
+.navbar .sections button {
     outline-style: none;
     border: none;
 
 }
 
-.navbar .logo span{
+.navbar .logo span {
     background-color: #FF6300;
     padding: 0 15px 0 15px;
     color: white;
@@ -75,7 +155,7 @@ header .navbar {
 
 }
 
-.navbar .sections .butt{
+.navbar .sections .butt {
     background-color: #FF6300;
     padding: 0 15px 0 15px;
     color: white;
@@ -83,14 +163,13 @@ header .navbar {
 }
 
 
-
-
-
-.navbar .logo h1{
+.navbar .logo h1 {
     color: white;
 }
 
-header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus{
+header .sections h2:hover,
+header .sections h2:active,
+header .sections h2:focus {
     text-decoration: underline;
     text-decoration-color: #FF6300;
     text-underline-offset: 8px;
@@ -103,11 +182,15 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 
 
+
+
+
+
 /* Home section */
 
 
-.home{
-    height: 90vh;
+.home {
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -115,35 +198,35 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 }
 
 
-.home .main-sec{
+.home .main-sec {
     display: flex;
     justify-content: space-evenly;
 }
 
-.main-sec .content .hi{
+.main-sec .content .hi {
     color: white;
     font-size: 25px;
     font-family: gag;
 }
 
-.main-sec .content h3{
-    color:#FF6300 ;
+.main-sec .content h3 {
+    color: #FF6300;
     font-family: 'gag';
     font-size: 45px;
 }
 
-.main-sec .content .title{
+.main-sec .content .title {
     position: relative;
 }
 
-.main-sec .content .title h1{
+.main-sec .content .title h1 {
     color: white;
     font-family: gag;
     text-decoration: none;
     font-size: 7em;
 }
 
-.main-sec .content .title span{
+.main-sec .content .title span {
     position: absolute;
     color: white;
     font-family: gag;
@@ -152,20 +235,21 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     left: 240px;
 }
 
-.main-sec .content p{
+.main-sec .content p {
     margin-top: 100px;
     color: white;
-    word-wrap: break-word; /* Wrap long words to prevent overflow */
+    word-wrap: break-word;
+    /* Wrap long words to prevent overflow */
     font-size: 25px;
     font-family: gag;
 }
 
-.main-sec .desc{
-    width:67em;
+.main-sec .desc {
+    width: 67em;
 }
 
 
-.main-sec .content button{
+.main-sec .content button {
     background-color: #FF6300;
     width: 200px;
     padding: 10px;
@@ -178,21 +262,33 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 }
 
 
-.main-sec .content button:hover{
+.main-sec .content button:hover {
 
     background-color: #b44805;
     transform: scale(0.95);
-    
+
 
 
 }
 
- .main-sec .shape{
+.main-sec .shape {
     position: relative;
+    animation: fade 3s ease-in-out forwards;
+
 }
 
 
- .main-sec .shape .soliman{
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+
+  }
+  
+
+
+.main-sec .shape .soliman {
 
     position: absolute;
     top: -105px;
@@ -210,9 +306,14 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 /* About us section */
 
+.about {
+    height: 25vh;
+    margin-bottom: 150px;
+}
 
 
-.secon-content{
+
+.secon-content {
     margin-left: 100px;
     margin-bottom: -190px;
 
@@ -221,32 +322,33 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 
 
-.content .desc-second p{
+.content .desc-second p {
     margin-top: 0;
 
 
 }
 
-.title .row h4{
+.title .row h4 {
     color: aliceblue;
 }
 
 
-.second-shape{
+.second-shape {
     margin-top: 50px;
 }
 
 
 /* progress bar */
 
-.progress-title{
+.progress-title {
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
     color: #455493;
     margin: 0 0 20px;
 }
-.progress{
+
+.progress {
     height: 7px;
     background: #f8f8f8;
     border-radius: 0;
@@ -254,15 +356,17 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     margin-bottom: 30px;
     overflow: visible;
 }
-.progress .progress-bar{
+
+.progress .progress-bar {
     box-shadow: none;
     border-radius: 0;
     position: relative;
     -webkit-animation: animate-positive 2s;
     animation: animate-positive 2s;
 }
+
 .progress .progress-bar:before,
-.progress .progress-bar:after{
+.progress .progress-bar:after {
     content: "";
     width: 20px;
     height: 20px;
@@ -272,48 +376,65 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     right: 16px;
     transform: rotate(45deg);
 }
-.progress .progress-bar:after{
+
+.progress .progress-bar:after {
     border: 4px solid #fff;
     position: absolute;
     right: 2px;
 }
+
 .progress.red .progress-bar:before,
-.progress.red .progress-bar:after{
+.progress.red .progress-bar:after {
     outline: 4px solid #ef5b5b;
 }
-.progress.red .progress-bar:after{
+
+.progress.red .progress-bar:after {
     background: #ef5b5b;
 }
+
 .progress.yellow .progress-bar:before,
-.progress.yellow .progress-bar:after{
+.progress.yellow .progress-bar:after {
     outline: 4px solid #ffc116;
 }
-.progress.yellow .progress-bar:after{
+
+.progress.yellow .progress-bar:after {
     background: #ffc116;
 }
+
 .progress.blue .progress-bar:before,
-.progress.blue .progress-bar:after{
+.progress.blue .progress-bar:after {
     outline: 4px solid #20a39e;
 }
-.progress.blue .progress-bar:after{
+
+.progress.blue .progress-bar:after {
     background: #20a39e;
 }
+
 .progress.green .progress-bar:before,
-.progress.green .progress-bar:after{
+.progress.green .progress-bar:after {
     outline: 4px solid #7cb518;
 }
-.progress.green .progress-bar:after{
+
+.progress.green .progress-bar:after {
     background: #7cb518;
 }
-@-webkit-keyframes animate-positive{
-    0%{ width: 0; }
-}
-@keyframes animate-positive{
-    0%{ width: 0; }
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0;
+    }
 }
 
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
 
 /*End progress bar */
+
+
+
 
 
 /*End  About Us section */
@@ -331,7 +452,7 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 
 
-.services{
+.services {
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -343,7 +464,7 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 
 
-.content h1{
+.content h1 {
     color: white;
     font-family: gag;
     font-size: 60px;
@@ -355,8 +476,8 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 }
 
-.services .content .desc{
-    width:67em;
+.services .content .desc {
+    width: 67em;
     color: white;
     padding-top: 10px;
     font-size: 20px;
@@ -366,11 +487,11 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 .services .cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 
 }
 
-.services .cards .card-widget{
+.services .cards .card-widget {
     background-color: white;
     float: left;
     text-align: start;
@@ -383,19 +504,19 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     transition: 4s;
 }
 
-.services .cards .card-widget:hover{
+.services .cards .card-widget:hover {
     transform: scale(0.95);
 
 }
 
 
-.services .cards .card-widget p{
+.services .cards .card-widget p {
 
     width: 15em;
 
 }
 
-.services .cards .card-widget img{
+.services .cards .card-widget img {
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -408,21 +529,23 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 
 
+/* projects  sections*/
 
 
-
-.projects{
+.projects {
     height: 45vh;
     margin-bottom: 10em;
+    margin-top: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
 }
 
-.projects .content .desc{
-    width:67em;
+.projects .content .desc {
+    width: 67em;
     color: white;
     padding-top: 10px;
     font-size: 20px;
@@ -432,11 +555,11 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 
 .projects .cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
 
 }
 
-.projects .cards .card-widget{
+.projects .cards .card-widget {
     background-color: white;
     float: left;
     text-align: center;
@@ -449,7 +572,9 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     transition: 1s;
 }
 
-.projects .cards .card-widget:active ,.projects .cards .card-widget:hover,.projects .cards .card-widget:focus{
+.projects .cards .card-widget:active,
+.projects .cards .card-widget:hover,
+.projects .cards .card-widget:focus {
 
     background-color: #FF6300;
     color: #fff;
@@ -458,30 +583,25 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
 }
 
 
-
-
-
-
-
-
+/* cards */
 
 .card-custom {
     overflow: hidden;
     min-height: 450px;
     box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-  }
-  
-  .card-custom-img {
+}
+
+.card-custom-img {
     height: 200px;
     min-height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-color: inherit;
-  }
-  
-  /* First border-left-width setting is a fallback */
-  .card-custom-img::after {
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
     position: absolute;
     content: '';
     top: 161px;
@@ -498,9 +618,9 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: inherit;
-  }
-  
-  .card-custom-avatar img {
+}
+
+.card-custom-avatar img {
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
     position: absolute;
@@ -508,32 +628,508 @@ header .sections h2:hover ,header .sections h2:active ,header .sections h2:focus
     left: 1.25rem;
     width: 100px;
     height: 100px;
-  }
-  
+}
 
 
-  /* footer */
+/* projects  sections*/
 
 
-  .foot{
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+.foot {
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-  }
+}
 
 
-  .footer{
+.footer {
     direction: rtl;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
+}
 
-  .Copyright{
+.Copyright {
     font-family: gag;
-  }
+}
+
+
+/*End  footer */
+
+
+
+/* animation */
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+    box-sizing: border-box;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+
+
+
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+.wrapper {
+    min-width: min(40rem, 100%);
+}
+
+.box {
+    border: 0.3rem solid;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+}
+
+
+/* End animation */
+
+
+
+/* responsive design */
+
+
+@media only screen and (max-width: 767px) {
+
+
+
+    body {
+        width: 100%;
+    }
+
+
+
+    header .navbar {
+        padding-top: 10px;
+        /* padding-left: 10px; */
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 9999999999999999999999999999999999999999;
+
+    }
+
+
+    /* header section */
+
+    .navbar .sections a,
+    .navbar .butt {
+        display: flex;
+        display: none;
+
+    }
+
+
+    .menu {
+        display: block;
+    }
+
+
+    .download {
+        background-color: #FF6300;
+        width: 150px;
+        padding: 5px;
+        margin-top: 20px;
+        margin-left: 32px;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: 2s;
+    }
+
+    .side-logo {
+        margin-left: 32px;
+
+    }
+
+    .sidenav {
+        padding-top: 21px;
+    }
+
+
+    .items {
+        padding-top: 30px;
+    }
+
+
+    /*End  header section */
+
+
+
+    /* Home section */
+
+
+    .home0 {
+        height: 100vh;
+        overflow-x: hidden;
+        margin-bottom: 50px;
+    }
+
+
+    .home .main-sec {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .main-sec .content .hi {
+        font-size: 15px;
+    }
+
+    .main-sec .content-home {
+        position: absolute;
+        z-index: 999;
+        left: 120px;
+        /* top: -30px; */
+
+    }
+
+
+    .main-sec .content h3 {
+        font-size: 23px;
+    }
+
+
+    .main-sec .content .title h1 {
+        font-size: 3em;
+    }
+
+    .main-sec .content .title span {
+        position: absolute;
+        font-size: 3em;
+        top: 50px;
+        left: 75px;
+    }
+
+    .main-sec .content p {
+        margin-top: 100px;
+        font-size: 16px;
+    }
+
+    .main-sec .desc {
+        width: 40em;
+        font-size: 10px;
+    }
+
+
+
+    .main-sec .shape {
+        margin-left: 250px;
+    }
+
+    .main-sec .shape .shape1 {
+        position: relative;
+        width: 25em;
+        transform: rotate(-90deg);
+    }
+
+
+    .main-sec .shape .soliman {
+        position: absolute;
+        top: -195px;
+        right: 92px;
+        width: 14em;
+        height: 30em;
+
+    }
+
+    /*End  Home section */
+
+
+
+
+    /* About us section */
+
+    .about {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .secon-content {
+        margin-left: 50px;
+        margin-bottom: -190px;
+        padding-top: 50px;
+
+
+    }
+
+    .about .title .row {
+        float: left;
+        width: 100%;
+    }
+
+
+
+
+
+    .content .desc-second p {
+        margin-top: 0;
+        font-size: 16px;
+        width: 23.5em;
+
+
+    }
+
+    .title .row h4 {
+        color: aliceblue;
+        font-size: 16px;
+    }
+
+
+
+    .second-main .second-shape {
+        position: absolute;
+        top: -370px;
+        width: 5em;
+    }
+
+
+    .about-shape {
+        width: 25em;
+    }
+
+
+    .second-main .second-shape .soliman {
+
+        right: 100px;
+
+
+    }
+
+
+
+    /*End  About us section */
+
+
+
+
+
+
+    /* services */
+
+
+
+    .services {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+
+
+    .services .content .desc {
+        width: auto;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+
+
+    .services .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .services .cards .card-widget {
+
+        margin-left: 0;
+
+
+    }
+
+
+
+
+    .services .cards .card-widget p {
+
+        width: auto;
+
+    }
+
+    .services .cards .card-widget img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+
+    /*End  services */
+
+
+
+
+    /* projects  sections*/
+
+
+
+    .projects {
+        height: auto;
+        margin-top: 50px;
+    }
+
+
+    .projects .content .desc {
+        width: auto;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+
+
+    .projects .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .projects .cards .card-widget {
+        background-color: white;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 150px;
+        height: auto;
+    }
+
+
+    /* cards */
+
+
+
+
+
+    /* projects  sections*/
+
+
+
+    /* footer */
+
+
+    .foot {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    .footer {
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .footer button {
+        width: 50px;
+        height: 50;
+    }
+
+
+
+    .Copyright {
+        font-family: gag;
+    }
 
 
     /*End  footer */
+
+
+
+}
