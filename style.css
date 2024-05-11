@@ -769,6 +769,8 @@ header .sections h2:focus {
 
 @media  screen  and (max-width: 450px) {
 
+    
+
 
 .navbar .logo{
     margin-left: 0;
@@ -786,7 +788,6 @@ header .sections h2:focus {
     align-items: center;
     justify-content: center;
 }
-
 
 
 .menu{
@@ -964,7 +965,7 @@ header .sections h2:focus {
     }
 
     .main-sec .desc {
-        width: 40em;
+        width: auto;
         font-size: 10px;
     }
 
