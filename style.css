@@ -767,7 +767,7 @@ header .sections h2:focus {
 
 }
 
-@media only screen and (max-width: 600px) {
+@media  screen  and (max-width: 450px) {
 
 
 .navbar .logo{
@@ -780,11 +780,17 @@ header .sections h2:focus {
 .home0{
     height: auto;
     width: 100%;
-    padding-left: 50px;
+    margin-top: 60px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+
+
 .menu{
-    margin-right: 55px;
+    padding-right: 55px;
 }
 
 
@@ -833,8 +839,13 @@ header .sections h2:focus {
 
 @media only screen and (max-width: 767px) {
 
+
+
+    
     body {
         width: 100%;
+        overflow-x: hidden;
+        scrollbar-width: none;
     }
 
 
@@ -843,7 +854,7 @@ header .sections h2:focus {
         padding-top: 10px;
         /* padding-left: 10px; */
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         background-color: rgba(0, 0, 0, 1);
         z-index: 9999999999999999999999999999999999999999;
 
@@ -862,6 +873,7 @@ header .sections h2:focus {
 
     .menu {
         display: block;
+        padding-right: 125px;
     }
 
 
@@ -896,13 +908,15 @@ header .sections h2:focus {
     /*End  header section */
 
 
+    
+
 
     /* Home section */
 
 
     .home0 {
         height: 100vh;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         margin-bottom: 50px;
         width: 100%;
     }
@@ -1153,8 +1167,6 @@ header .sections h2:focus {
 
 
     /* cards */
-
-
 
 
 
