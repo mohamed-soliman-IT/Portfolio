@@ -843,7 +843,7 @@ header .sections h2:focus {
 
     
     body {
-        width: 100%;
+        width: auto;
         overflow-x: hidden;
         scrollbar-width: none;
     }
@@ -908,7 +908,7 @@ header .sections h2:focus {
     /*End  header section */
 
 
-    
+
 
 
     /* Home section */
@@ -917,6 +917,7 @@ header .sections h2:focus {
     .home0 {
         height: 100vh;
         /* overflow-x: hidden; */
+        margin-top: 60px;
         margin-bottom: 50px;
         width: 100%;
     }
