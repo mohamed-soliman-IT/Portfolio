@@ -51,16 +51,7 @@
     padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
 
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
 
 
@@ -763,9 +754,84 @@ header .sections h2:focus {
 /* responsive design */
 
 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+.navbar .logo{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+
+
+.home0{
+    height: auto;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.menu{
+    margin-right: 55px;
+}
+
+
+    .about{
+        height: auto;
+        margin-top: 180px;
+        width: 100%;
+        padding-left: 50px;
+
+    }
+
+
+
+    .secon-content {
+        margin-left: 0;
+        margin-right: 50px;
+        margin-bottom: -190px;
+        padding-top: 50px;
+        float: left;
+
+
+    }
+
+    .about .title .row {
+        float: left;
+        width: 100%;
+    }
+
+
+  
+
+.serv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+}
+
+
+
+
 @media only screen and (max-width: 767px) {
-
-
 
     body {
         width: 100%;
@@ -838,6 +904,7 @@ header .sections h2:focus {
         height: 100vh;
         overflow-x: hidden;
         margin-bottom: 50px;
+        width: 100%;
     }
 
 
