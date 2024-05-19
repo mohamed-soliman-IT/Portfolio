@@ -1163,7 +1163,7 @@ header .sections h2:focus {
 
 
     header .navbar {
-        padding-top: 1%;
+        padding-top: 3%;
         /* padding-left: 10px; */
         display: flex;
         justify-content: space-between;
@@ -1173,6 +1173,9 @@ header .sections h2:focus {
     }
 
 
+    .navbar .logo h1 {
+        font-size: 25px;
+    }
 
     .navbar .sections a,
     .navbar .butt {
@@ -1184,6 +1187,7 @@ header .sections h2:focus {
 
     .menu {
         display: block;
+        padding-right: 2px;
         
     }
 
