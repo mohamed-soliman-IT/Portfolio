@@ -1249,7 +1249,7 @@ header .sections h2:focus {
         padding-left: 50px;
         width: 100%;
         overflow-x: hidden; /* Ensures no horizontal scroll within the section */
-        /* z-index: -111; */
+        z-index: -111;
 
     }
 
@@ -1395,7 +1395,7 @@ header .sections h2:focus {
         top: -370px;
         width: 0em;
         padding-left: 150px;
-        z-index: 99999999999999999999999999;
+        z-index: -99999999999999999999999999;
 
     }
 
