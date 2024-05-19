@@ -1243,7 +1243,7 @@ header .sections h2:focus {
     
     .home0 {
         height: calc(100vh - 10px); /* Adjusted for the total margin */
-        margin-top: 100px;
+        margin-top: 80px;
         margin-bottom: 50px;
         /* padding-right: 55px; */
         padding-left: 50px;
