@@ -1174,7 +1174,7 @@ header .sections h2:focus {
         display: flex;
         justify-content: space-evenly;
         background-color: rgba(0, 0, 0, 1);
-        z-index: 9999999999999999999999999999999999999999;
+        z-index: 9999999999999;
 
     }
 
@@ -1243,13 +1243,13 @@ header .sections h2:focus {
     
     .home0 {
         height: calc(100vh - 10px); /* Adjusted for the total margin */
-        margin-top: 120px;
+        margin-top: 100px;
         margin-bottom: 50px;
         /* padding-right: 55px; */
         padding-left: 50px;
         width: 100%;
         overflow-x: hidden; /* Ensures no horizontal scroll within the section */
-        z-index: -111;
+        /* z-index: -111; */
 
     }
 
@@ -1338,14 +1338,16 @@ header .sections h2:focus {
     /* About us section */
 
     .about {
-        height: 185vh;
-        margin-top: 55%;
+        height: 145vh;
+        padding-top: 400px;
+        /* margin-top: 55%; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        overflow-x: hidden;
-        z-index: 99999999999999999999999999;
+        /* overflow-x: hidden; */
+        overflow: hidden;
+        z-index: -55555555555555;
     }
 
     .second-main {
