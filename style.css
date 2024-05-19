@@ -1155,6 +1155,7 @@ header .sections h2:focus {
    }
 
 
+
 /* good design */
 
      html {
@@ -1175,6 +1176,7 @@ header .sections h2:focus {
         justify-content: space-evenly;
         background-color: rgba(0, 0, 0, 1);
         z-index: 9999999999999;
+        
 
     }
 
@@ -1243,7 +1245,7 @@ header .sections h2:focus {
     
     .home0 {
         height: calc(100vh - 10px); /* Adjusted for the total margin */
-        margin-top: 80px;
+        margin-top: 65px;
         margin-bottom: 50px;
         /* padding-right: 55px; */
         padding-left: 50px;
@@ -1270,7 +1272,7 @@ header .sections h2:focus {
         position: absolute;
         z-index: 999;
         left: 120px;
-        /* top: -30px; */
+        top: -30px;
 
     }
 
@@ -1362,6 +1364,7 @@ header .sections h2:focus {
         margin-left: 10px;
         margin-bottom: -190px;
         padding-top: 50px;
+        
 
 
     }
@@ -1440,6 +1443,7 @@ header .sections h2:focus {
         height: auto;
         display: flex;
         text-align: center;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin-left: 0;
