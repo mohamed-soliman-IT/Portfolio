@@ -1151,7 +1151,11 @@ header .sections h2:focus {
 @media screen and (max-width: 450px) {
 
 
-    body{
+     html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
         overflow-x: hidden;
     }
 
@@ -1162,7 +1166,7 @@ header .sections h2:focus {
         padding-top: 1%;
         /* padding-left: 10px; */
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: rgba(0, 0, 0, 1);
         z-index: 9999999999999999999999999999999999999999;
 
@@ -1180,7 +1184,8 @@ header .sections h2:focus {
 
     .menu {
         display: block;
-        padding-right: 25px;
+        padding-right: 6px;
+        
     }
 
 
@@ -1198,7 +1203,7 @@ header .sections h2:focus {
     }
 
     .side-logo {
-        margin-left: 32px;
+        margin-left: 0;
 
     }
 
@@ -1220,21 +1225,29 @@ header .sections h2:focus {
     /* Home section */
 
 
+    * {
+        box-sizing: border-box;
+    }
+    
+
+    
     .home0 {
-        height: 100vh;
-        /* overflow-x: hidden; */
+        height: calc(100vh - 10px); /* Adjusted for the total margin */
         margin-top: 60px;
         margin-bottom: 50px;
+        /* padding-right: 55px; */
+        padding-left: 50px;
         width: 100%;
-        overflow-x: hidden;
-
+        overflow-x: hidden; /* Ensures no horizontal scroll within the section */
     }
 
 
     .home .main-sec {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         position: relative;
+        margin-left: 10px;
+
     }
 
     .main-sec .content .hi {
@@ -1272,7 +1285,7 @@ header .sections h2:focus {
     }
 
     .main-sec .desc {
-        width: 40em;
+        width: 36em;
         font-size: 10px;
     }
 
@@ -1307,7 +1320,7 @@ header .sections h2:focus {
 
     .about {
         height: 100vh;
-        margin-top: 50%;
+        margin-top: 55%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1323,7 +1336,7 @@ header .sections h2:focus {
     }
 
     .secon-content {
-        margin-left: 50px;
+        margin-left: 10px;
         margin-bottom: -190px;
         padding-top: 50px;
 
@@ -1342,7 +1355,7 @@ header .sections h2:focus {
     .content .desc-second p {
         margin-top: 0;
         font-size: 16px;
-        width: 23.5em;
+        width: 21.9em;
 
 
     }
@@ -1389,7 +1402,7 @@ header .sections h2:focus {
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin: 0;
+        margin-left: 0;
 
     }
 
@@ -1397,7 +1410,7 @@ header .sections h2:focus {
 
     .services .content .desc {
         width: auto;
-        padding-top: 10px;
+        padding: 10px 5px 0 5px;
         font-size: 16px;
     }
 
@@ -1410,7 +1423,7 @@ header .sections h2:focus {
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-left: 10%;
+        padding-left: 5%;
 
     }
 
@@ -1455,7 +1468,7 @@ header .sections h2:focus {
 
     .projects .content .desc {
         width: auto;
-        padding-top: 10px;
+        padding: 10px 5px 0 5px;
         font-size: 16px;
     }
 
