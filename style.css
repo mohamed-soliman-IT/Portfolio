@@ -271,12 +271,17 @@ header .sections h2:focus {
 
 
 @keyframes fade {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 
 
-  }
-  
+}
+
 
 
 .main-sec .shape .soliman {
@@ -754,95 +759,16 @@ header .sections h2:focus {
 /* responsive design */
 
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
 
 
-}
-
-@media  screen  and (max-width: 450px) {
-
-    
+/* tablet */
 
 
-.navbar .logo{
-    margin-left: 0;
-    padding-left: 0;
-}
-
-
-
-.home0{
-    height: auto;
-    width: 100%;
-    margin-top: 60px;
-    padding-left: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.menu{
-    padding-right: 55px;
-}
-
-
-    .about{
-        height: auto;
-        margin-top: 180px;
-        width: 100%;
-        padding-left: 50px;
-
-    }
-
-
-
-    .secon-content {
-        margin-left: 0;
-        margin-right: 50px;
-        margin-bottom: -190px;
-        padding-top: 50px;
-        float: left;
-
-
-    }
-
-    .about .title .row {
-        float: left;
-        width: 100%;
-    }
-
-
-  
-
-.serv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+@media only screen and (min-width:451px) and (max-width: 768px) {
 
 
 
 
-}
-
-
-
-
-@media only screen and (max-width: 767px) {
-
-
-
-    
     body {
         width: auto;
         overflow-x: hidden;
@@ -921,6 +847,7 @@ header .sections h2:focus {
         margin-top: 60px;
         margin-bottom: 50px;
         width: 100%;
+
     }
 
 
@@ -1214,3 +1141,496 @@ header .sections h2:focus {
 
 
 }
+
+
+
+/* mobile */
+
+
+
+@media screen and (max-width: 450px) {
+
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* header section */
+
+
+    header .navbar {
+        padding-top: 1%;
+        /* padding-left: 10px; */
+        display: flex;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 9999999999999999999999999999999999999999;
+
+    }
+
+
+
+    .navbar .sections a,
+    .navbar .butt {
+        display: flex;
+        display: none;
+
+    }
+
+
+    .menu {
+        display: block;
+        padding-right: 25px;
+    }
+
+
+    .download {
+        background-color: #FF6300;
+        width: 12%;
+        padding: 5px;
+        margin-top: 20px;
+        margin-left: 32px;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: 2s;
+    }
+
+    .side-logo {
+        margin-left: 32px;
+
+    }
+
+    .sidenav {
+        padding-top: 21px;
+    }
+
+
+    .items {
+        padding-top: 30px;
+    }
+
+
+    /*End  header section */
+
+
+
+
+    /* Home section */
+
+
+    .home0 {
+        height: 100vh;
+        /* overflow-x: hidden; */
+        margin-top: 60px;
+        margin-bottom: 50px;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+
+    .home .main-sec {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .main-sec .content .hi {
+        font-size: 15px;
+    }
+
+    .main-sec .content-home {
+        position: absolute;
+        z-index: 999;
+        left: 120px;
+        /* top: -30px; */
+
+    }
+
+
+    .main-sec .content h3 {
+        font-size: 23px;
+    }
+
+
+    .main-sec .content .title h1 {
+        font-size: 3em;
+    }
+
+    .main-sec .content .title span {
+        position: absolute;
+        font-size: 3em;
+        top: 50px;
+        left: 75px;
+    }
+
+    .main-sec .content p {
+        margin-top: 100px;
+        font-size: 16px;
+    }
+
+    .main-sec .desc {
+        width: 40em;
+        font-size: 10px;
+    }
+
+
+
+    .main-sec .shape {
+        margin-left: 250px;
+    }
+
+    .main-sec .shape .shape1 {
+        position: relative;
+        width: 25em;
+        transform: rotate(-90deg);
+    }
+
+
+    .main-sec .shape .soliman {
+        position: absolute;
+        top: -195px;
+        right: 92px;
+        width: 14em;
+        height: 30em;
+
+    }
+
+    /*End  Home section */
+
+
+
+
+    /* About us section */
+
+    .about {
+        height: 100vh;
+        margin-top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .secon-content {
+        margin-left: 50px;
+        margin-bottom: -190px;
+        padding-top: 50px;
+
+
+    }
+
+    .about .title .row {
+        float: left;
+        width: 100%;
+    }
+
+
+
+
+
+    .content .desc-second p {
+        margin-top: 0;
+        font-size: 16px;
+        width: 23.5em;
+
+
+    }
+
+    .title .row h4 {
+        color: aliceblue;
+        font-size: 16px;
+    }
+
+
+
+    .second-main .second-shape {
+        position: absolute;
+        top: -370px;
+        width: 5em;
+    }
+
+
+    .about-shape {
+        width: 25em;
+    }
+
+
+    .second-main .second-shape .soliman {
+
+        right: 100px;
+
+
+    }
+
+
+
+    /*End  About us section */
+
+
+
+    /* services */
+
+
+
+    .services {
+        height: auto;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+    }
+
+
+
+    .services .content .desc {
+        width: auto;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+
+
+    .services .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 10%;
+
+    }
+
+
+    .services .cards .card-widget {
+
+        margin-left: 0;
+
+
+    }
+
+
+
+
+    .services .cards .card-widget p {
+
+        width: auto;
+
+    }
+
+    .services .cards .card-widget img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+
+    /*End  services */
+
+
+
+
+    /* projects  sections*/
+
+
+
+    .projects {
+        height: auto;
+        margin-top: 50px;
+    }
+
+
+    .projects .content .desc {
+        width: auto;
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+
+
+    .projects .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .projects .cards .card-widget {
+        background-color: white;
+        margin-left: 0;
+        margin-top: 20px;
+        width: 150px;
+        height: auto;
+    }
+
+
+    /* cards */
+
+
+
+    /* projects  sections*/
+
+
+
+    /* footer */
+
+
+    .foot {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    .footer {
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .footer button {
+        width: 50px;
+        height: 50;
+    }
+
+
+
+    .Copyright {
+        font-family: gag;
+    }
+
+
+    /*End  footer */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 450px) {
+    
+
+
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+
+    .logo {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+    .box {
+        border: none;
+        animation: none;
+    }
+
+
+    .navbar .logo {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+
+
+    .home0 {
+        height: auto;
+        width: 100%;
+        margin-top: 60px;
+        padding-left: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+
+    .menu {
+        margin-right: 0px;
+    }
+
+
+    .about {
+        height: auto;
+        margin-top: 180px;
+        width: 100%;
+        padding-left: 50px;
+
+    }
+
+
+
+    .secon-content {
+        margin-left: 0;
+        margin-right: 50px;
+        margin-bottom: -190px;
+        padding-top: 50px;
+        float: left;
+
+
+    }
+
+    .about .title .row {
+        float: left;
+        width: 100%;
+    }
+
+
+
+
+    .serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+
+
+}
+ */
