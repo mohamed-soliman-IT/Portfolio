@@ -1207,12 +1207,12 @@ header .sections h2:focus {
 
     .side-logo {
         margin-left: 0;
+        padding-left: 10px;
 
     }
 
     .sidenav {
         padding-top: 21px;
-        padding-left: 10px;
     }
 
 
